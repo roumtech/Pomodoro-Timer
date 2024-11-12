@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf2f8; /* Light pink background */
+}
+
+/* Pomodoro Container */
+.pomodoro-container {
+    text-align: center;
+    width: 320px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h1 {
+    color: #ff6b81; /* Soft red color */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 56px;
+    color: #3e3e3e;
+    margin: 20px 0;
+    background-color: #ffe4e1; /* Light pink for timer background */
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.controls button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start { background-color: #f67280; }
+#pause { background-color: #f8b195; }
+#reset { background-color: #c06c84; }
+
+.controls button:hover {
+    opacity: 0.9;
+}
+
+/* Button animations */
+button {
+    position: relative;
+    overflow: hidden;
+}
